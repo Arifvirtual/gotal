@@ -4,16 +4,11 @@ from code import *
 class MyFirstTests(unittest.TestCase):
   
   def test_hello(self):
+    print "--{0}--".format(hello())
     self.assertEqual('Hello, World!', hello())
 
   def test_bad_hello(self):
-    self.assertEqual('Hello, Ashish!', hello())
-
-  def test_new_function(self):
-    self.assertEqual(0, add())
-  
-  def test_five_return(self):
-    self.assertEqual(5, add(2,3))
+    self.assertEqual('Hello, World!', hello())
 
 
 if __name__ == '__main__':
