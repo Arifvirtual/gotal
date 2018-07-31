@@ -4,7 +4,6 @@ from code import *
 class MyFirstTests(unittest.TestCase):
   
   def test_hello(self):
-    print "--{0}--".format(hello())
     self.assertEqual('Hello, World!', hello())
 
   def test_bad_hello(self):
